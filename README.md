@@ -34,7 +34,7 @@ Requirements:
 *Note: If you are using Diablo II v1.13d, then you need to define `D2_VERSION_113D`. This can be done by adding `#define D2_VERSION_113D` to the top of `D2Ptrs.h`*
 
 - Open `BH.sln` in Visual Studio and build it
-- Open Diablo II and load into a game (doesn't work unless your actually in a game)
+- Open Diablo II and load into a game (doesn't work unless you're actually in a game)
 - Run `BH.Injector.exe` from the `Debug/` or `Release/` directory (depending on your build mode)
   + If you run it from a command prompt, you can use `BH.Injector.exe -p -o 2` to toggle injection and exit immediately
   + Otherwise, you use the interactive menu to choose how to inject BH.dll
