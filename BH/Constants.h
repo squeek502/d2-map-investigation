@@ -897,6 +897,7 @@ enum CharacterClass {
 #define MAP_A5_FORGOTTEN_SANDS					0x86
 #define MAP_A5_FURNACE_OF_PAIN					0x87
 #define MAP_A5_TRISTRAM							0x88
+#define MAP_ID_MAX								(MAP_A5_TRISTRAM+1)
 
 ///////////////////////////////////////////////////
 // Quests

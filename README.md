@@ -14,6 +14,7 @@ First tile location for the second area of each act:
 Seed: 0
  Act 1: Cold Plains: 1080,992
  Act 2: Dry Hills: 1024,992
+  Summoner: Top Right
  Act 3: Great Marsh: 1056,800
  Act 4: Plains of Despair: 1152,1064
  Act 5: Frigid Highlands: 736,1024
@@ -21,6 +22,7 @@ Seed: 0
 Seed: 1
  Act 1: Cold Plains: 1144,1088
  Act 2: Dry Hills: 976,1040
+  Summoner: Top Left
  Act 3: Great Marsh: 992,864
  Act 4: Plains of Despair: 1064,1104
  Act 5: Frigid Highlands: 736,1024
@@ -45,7 +47,7 @@ Requirements:
 
 ### Arcane Sanctuary TODO
 
-- [ ] Figure out how to determine which direction from the waypoint the summoner is from a generated `Act`
+- [x] Figure out how to determine which direction from the waypoint the summoner is from a generated `Act`
 - [ ] Dump as much relevant information as possible for X amount of seeds (for levels in Act 1 and Act 2 before Arcane Sanctuary)
 - [ ] Find coorelations between Summoner direction and any of the dumped data and rank them
 - [ ] Figure out if any of the found coorelations are actually usable in a speedrun
