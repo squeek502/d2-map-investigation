@@ -5,6 +5,7 @@ A tool for investigating Diablo II map generation in the hopes of finding exploi
 
 Status:
 - This is currently a proof-of-concept just showing that map seeds can be programmatically iterated, and that their resulting levels/areas/tiles/presets/etc can be dumped/analyzed.
+- The relevant code is in [BH/MapInvestigation.cpp](BH/MapInvestigation.cpp). See [slashdiablo-maphack](https://github.com/slippittydo/slashdiablo-maphack) for reference on how the map data can be further dug into.
 
 Example output:
 ```
