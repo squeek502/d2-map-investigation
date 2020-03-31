@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Diablo II">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="BH">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Diablo II\Helpers">
+      <UniqueIdentifier>{3d247880-c730-4f2e-9701-ae78c08f3a29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Diablo II\Stubs">
+      <UniqueIdentifier>{1bc5b2ad-e656-4cf1-90cc-f3f1211e93b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{3e4df0ab-40cd-4fff-8264-e7415acca0fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D2Helpers.cpp">
+      <Filter>Diablo II\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="D2Stubs.cpp">
+      <Filter>Diablo II\Stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="BH.cpp">
+      <Filter>BH</Filter>
+    </ClCompile>
+    <ClCompile Include="BitReader.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="D2Ptrs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapInvestigation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D2Structs.h">
+      <Filter>Diablo II</Filter>
+    </ClInclude>
+    <ClInclude Include="D2Helpers.h">
+      <Filter>Diablo II\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="D2Stubs.h">
+      <Filter>Diablo II\Stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BH.h">
+      <Filter>BH</Filter>
+    </ClInclude>
+    <ClInclude Include="D2Ptrs.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>BH</Filter>
+    </ClInclude>
+    <ClInclude Include="BitReader.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="MapInvestigation.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D2Ptrs_113c.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D2Ptrs_113d.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

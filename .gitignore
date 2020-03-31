@@ -1,0 +1,38 @@
+.vs/
+Release/
+Debug/
+*.vcxproj.user
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+
+*.exe
+*.bin
+*.dll
+*.obj
+*.pdb
+*.ipch
+*.ilk
+*.idb
+*.tlog
+*.log
+*.lastbuildstate
+*.manifest
+*.user
+*.suo
+*.sdf
+*.opensdf
+
+*~
+*.swp
