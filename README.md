@@ -1,7 +1,7 @@
 d2-map-investigation
 ====================
 
-A tool for investigating Diablo II map generation in the hopes of finding exploitable coorelations between how things are generated (i.e. if a certain tile is found in X, then that means that Y will generate in a certain way). The ultimate goal is to find a way of knowing ahead-of-time which direction from the waypoint The Summoner will be in the Arcane Sanctuary.
+A tool for investigating Diablo II map generation in the hopes of finding exploitable correlations between how things are generated (i.e. if a certain tile is found in X, then that means that Y will generate in a certain way). The ultimate goal is to find a way of knowing ahead-of-time which direction from the waypoint The Summoner will be in the Arcane Sanctuary.
 
 Status:
 - This is currently a proof-of-concept just showing that map seeds can be programmatically iterated, and that their resulting levels/areas/tiles/presets/etc can be dumped/analyzed.
@@ -36,7 +36,7 @@ Requirements:
   + `arcane.csv` contains seed + the position of the arcane sanctuary
   + `data.csv` contains a dump of all other potentially-relevant data for each seed
 
-*Note: I wasn't able to get BH.Injector to succesfully inject when run through the Visual Studio debugger; it might be possible to get that to work*
+*Note: I wasn't able to get BH.Injector to successfully inject when run through the Visual Studio debugger; it might be possible to get that to work*
 
 ### Finding Correlations / Progress
 
@@ -54,8 +54,8 @@ Running `lua ../find_correlations.lua` from with the `Debug/` or `Release/` dire
 
 - [x] Figure out how to determine which direction from the waypoint the summoner is from a generated `Act`
 - [ ] Dump as much relevant information as possible for X amount of seeds (for levels in Act 1 and Act 2 before Arcane Sanctuary)
-- [ ] Find coorelations between Summoner direction and any of the dumped data and rank them
-- [ ] Figure out if any of the found coorelations are actually usable in a speedrun
+- [ ] Find correlations between Summoner direction and any of the dumped data and rank them
+- [ ] Figure out if any of the found correlations are actually usable in a speedrun
 
 ## Acknowledgements
 
