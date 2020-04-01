@@ -9,24 +9,13 @@ Status:
 
 Example output:
 ```
-First tile location for the second area of each act:
-
-Seed: 0
- Act 1: Cold Plains: 1080,992
- Act 2: Dry Hills: 1024,992
-  Summoner: Top Right
- Act 3: Great Marsh: 1056,800
- Act 4: Plains of Despair: 1152,1064
- Act 5: Frigid Highlands: 736,1024
-
-Seed: 1
- Act 1: Cold Plains: 1144,1088
- Act 2: Dry Hills: 976,1040
-  Summoner: Top Left
- Act 3: Great Marsh: 992,864
- Act 4: Plains of Despair: 1064,1104
- Act 5: Frigid Highlands: 736,1024
+Seed: 0         Summoner: Top Right
+Seed: 1         Summoner: Top Left
+Seed: 2         Summoner: Bottom Right
+Seed: 3         Summoner: Bottom Left
+Seed: 4         Summoner: Bottom Right
  ```
+(the rest of the data is dumped to .csv files)
 
 ### Usage
 
@@ -41,9 +30,25 @@ Requirements:
 - Run `BH.Injector.exe` from the `Debug/` or `Release/` directory (depending on your build mode)
   + If you run it from a command prompt, you can use `BH.Injector.exe -p -o 2` to toggle injection and exit immediately
   + Otherwise, you use the interactive menu to choose how to inject BH.dll
-- A console window will appear and dump the data
+- A console window will appear and start dumping the data
+  + Once it's done, you can uninject
+- `.csv` files will be created next to `BH.dll`
+  + `arcane.csv` contains seed + the position of the arcane sanctuary
+  + `data.csv` contains a dump of all other potentially-relevant data for each seed
 
 *Note: I wasn't able to get BH.Injector to succesfully inject when run through the Visual Studio debugger; it might be possible to get that to work*
+
+### Finding Correlations / Progress
+
+First attempt was to dump all presets (objects, monsters, tiles that always spawn in a given room) and look for any that fulfill all 3 of these conditions:
+
+- Exist in all same-position arcane seeds
+- Do not exist in any seeds with different arcane positions
+- Are in Act 1 or 2
+
+This ended up with no matching presets outside of things like The Summoner himself, Horazon's Journal, etc.
+
+Running `lua ../find_correlations.lua` from with the `Debug/` or `Release/` directory (whichever you are using) will parse `data.csv`/`arcane.csv` and run the check described above.
 
 ### Arcane Sanctuary TODO
 

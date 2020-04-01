@@ -6,7 +6,6 @@
 #include <fstream>
 using namespace std;
 
-#ifdef _DEBUG
 bool RedirectConsoleIO()
 {
 	bool result = true;
@@ -105,5 +104,3 @@ bool CreateNewConsole(int16_t minLength)
 
 	return result;
 }
-
-#endif
