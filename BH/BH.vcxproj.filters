@@ -22,6 +22,18 @@
     <Filter Include="Common">
       <UniqueIdentifier>{3e4df0ab-40cd-4fff-8264-e7415acca0fc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MapInvestigation">
+      <UniqueIdentifier>{758f622f-0c89-4b96-87b6-d7fac8db2b51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapInvestigation\DataAggregators">
+      <UniqueIdentifier>{58278965-1361-455b-bb18-c09b998e67af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapInvestigation\Helpers">
+      <UniqueIdentifier>{2ed6cb21-914e-4e26-8601-82858e5db424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapInvestigation\DataHandling">
+      <UniqueIdentifier>{69340ab9-4f0d-43e9-9b81-ebe64220393a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DllMain.cpp">
@@ -49,7 +61,31 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MapInvestigation.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>MapInvestigation</Filter>
+    </ClCompile>
+    <ClCompile Include="D2Coords.cpp">
+      <Filter>MapInvestigation\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcaneAggregator.cpp">
+      <Filter>MapInvestigation\DataAggregators</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandler.cpp">
+      <Filter>MapInvestigation\DataHandling</Filter>
+    </ClCompile>
+    <ClCompile Include="DataDispatcher.cpp">
+      <Filter>MapInvestigation\DataHandling</Filter>
+    </ClCompile>
+    <ClCompile Include="DataDumper.cpp">
+      <Filter>MapInvestigation\DataHandling</Filter>
+    </ClCompile>
+    <ClCompile Include="PresetsAggregator.cpp">
+      <Filter>MapInvestigation\DataAggregators</Filter>
+    </ClCompile>
+    <ClCompile Include="Room2Aggregator.cpp">
+      <Filter>MapInvestigation\DataAggregators</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelDirectionsAggregator.cpp">
+      <Filter>MapInvestigation\DataAggregators</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -80,14 +116,41 @@
     <ClInclude Include="Console.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="MapInvestigation.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="D2Ptrs_113c.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="D2Ptrs_113d.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapInvestigation.h">
+      <Filter>MapInvestigation</Filter>
+    </ClInclude>
+    <ClInclude Include="D2Coords.h">
+      <Filter>MapInvestigation\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ArcaneAggregator.h">
+      <Filter>MapInvestigation\DataAggregators</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandler.h">
+      <Filter>MapInvestigation\DataHandling</Filter>
+    </ClInclude>
+    <ClInclude Include="DataDispatcher.h">
+      <Filter>MapInvestigation\DataHandling</Filter>
+    </ClInclude>
+    <ClInclude Include="DataDumper.h">
+      <Filter>MapInvestigation\DataHandling</Filter>
+    </ClInclude>
+    <ClInclude Include="DataAggregator.h">
+      <Filter>MapInvestigation\DataHandling</Filter>
+    </ClInclude>
+    <ClInclude Include="PresetsAggregator.h">
+      <Filter>MapInvestigation\DataAggregators</Filter>
+    </ClInclude>
+    <ClInclude Include="Room2Aggregator.h">
+      <Filter>MapInvestigation\DataAggregators</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelDirectionsAggregator.h">
+      <Filter>MapInvestigation\DataAggregators</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

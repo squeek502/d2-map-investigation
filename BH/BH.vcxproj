@@ -99,29 +99,46 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArcaneAggregator.cpp" />
     <ClCompile Include="BH.cpp" />
     <ClCompile Include="BitReader.cpp" />
     <ClCompile Include="Common.cpp" />
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="D2Helpers.cpp" />
+    <ClCompile Include="D2Coords.cpp" />
     <ClCompile Include="D2Ptrs.cpp" />
     <ClCompile Include="D2Stubs.cpp" />
+    <ClCompile Include="DataHandler.cpp" />
+    <ClCompile Include="DataDispatcher.cpp" />
+    <ClCompile Include="DataDumper.cpp" />
     <ClCompile Include="DllMain.cpp" />
+    <ClCompile Include="LevelDirectionsAggregator.cpp" />
     <ClCompile Include="MapInvestigation.cpp" />
+    <ClCompile Include="PresetsAggregator.cpp" />
+    <ClCompile Include="Room2Aggregator.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ArcaneAggregator.h" />
     <ClInclude Include="BH.h" />
     <ClInclude Include="BitReader.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="Constants.h" />
     <ClInclude Include="D2Helpers.h" />
+    <ClInclude Include="D2Coords.h" />
     <ClInclude Include="D2Ptrs.h" />
     <ClInclude Include="D2Ptrs_113c.h" />
     <ClInclude Include="D2Ptrs_113d.h" />
     <ClInclude Include="D2Structs.h" />
     <ClInclude Include="D2Stubs.h" />
+    <ClInclude Include="DataAggregator.h" />
+    <ClInclude Include="DataHandler.h" />
+    <ClInclude Include="DataDispatcher.h" />
+    <ClInclude Include="DataDumper.h" />
+    <ClInclude Include="LevelDirectionsAggregator.h" />
     <ClInclude Include="MapInvestigation.h" />
+    <ClInclude Include="PresetsAggregator.h" />
+    <ClInclude Include="Room2Aggregator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

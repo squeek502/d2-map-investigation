@@ -27,7 +27,7 @@ bool BH::Startup(HINSTANCE instance, VOID* reserved) {
 		cGuardLoaded = false;
 	}
 
-	InvestigateMaps();
+	MapInvestigation::InvestigateMaps();
 
 	return true;
 }

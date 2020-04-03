@@ -2,6 +2,7 @@
 Release/
 Debug/
 *.vcxproj.user
+tmp/
 
 # Compiled Object files
 *.slo
