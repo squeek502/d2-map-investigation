@@ -42,7 +42,11 @@ void PresetsAggregator::dumpHeader(std::ostream & stream)
 void PresetsAggregator::dumpData(std::ostream & stream)
 {
 	stream << seed << ",";
-	stream << UnicodeToAnsi(D2CLIENT_GetLevelName(levelNo)) << ",";
+
+	char* levelName = UnicodeToAnsi(D2CLIENT_GetLevelName(levelNo));
+	stream << levelName << ",";
+	delete[] levelName;
+
 	switch (presetType)
 	{
 	case UNIT_PLAYER:
@@ -77,7 +81,9 @@ void PresetsAggregator::dumpData(std::ostream & stream)
 			stream << " " << objTxt->szName;
 		}
 		if (objTxt && objTxt->wszName) {
-			stream << " (" << UnicodeToAnsi(objTxt->wszName) << ")";
+			char* name = UnicodeToAnsi(objTxt->wszName);
+			stream << " (" << name << ")";
+			delete[] name;
 		}
 		stream << ",";
 	}

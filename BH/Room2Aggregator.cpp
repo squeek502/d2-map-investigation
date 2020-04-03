@@ -25,6 +25,7 @@ void Room2Aggregator::onRoom2Load(Room2* room)
 void Room2Aggregator::dumpHeader(ostream& stream)
 {
 	stream << "seed,level_name,room_flags,room_number,sub_number,preset_type,has_preset,preset_txt_number";
+	stream << ",";
 	stream << "level_relative_room_coords_x,level_relative_room_coords_y";
 	stream << ",";
 	stream << "absolute_room_coords_x,absolute_room_coords_y";
@@ -34,7 +35,11 @@ void Room2Aggregator::dumpHeader(ostream& stream)
 void Room2Aggregator::dumpData(ostream& stream)
 {
 	stream << seed << ",";
-	stream << UnicodeToAnsi(D2CLIENT_GetLevelName(levelNo)) << ",";
+
+	char* levelName = UnicodeToAnsi(D2CLIENT_GetLevelName(levelNo));
+	stream << levelName << ",";
+	delete[] levelName;
+
 	stream << roomFlags << ",";
 	stream << roomNumber << ",";
 	stream << subNumber << ",";

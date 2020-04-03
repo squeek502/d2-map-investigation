@@ -28,8 +28,15 @@ void LevelDirectionsAggregator::dumpHeader(ostream& stream)
 void LevelDirectionsAggregator::dumpData(ostream& stream)
 {
 	stream << seed << ",";
-	stream << UnicodeToAnsi(D2CLIENT_GetLevelName(fromLevelNo)) << ",";
-	stream << UnicodeToAnsi(D2CLIENT_GetLevelName(toLevelNo)) << ",";
+
+	char* fromLevelName = UnicodeToAnsi(D2CLIENT_GetLevelName(fromLevelNo));
+	stream << fromLevelName << ",";
+	delete[] fromLevelName;
+
+	char* toLevelName = UnicodeToAnsi(D2CLIENT_GetLevelName(toLevelNo));
+	stream << toLevelName << ",";
+	delete[] toLevelName;
+
 	stream << DirectionString(toCoords.directionFrom(fromCoords));
 	stream << endl;
 }
