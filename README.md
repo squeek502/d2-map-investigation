@@ -23,8 +23,6 @@ Requirements:
 - A console window will appear and start dumping the data
   + Once it's done, you can uninject
 - `.csv` files will be created next to `BH.dll` (see Output below)
-  + `arcane.csv` contains seed + the position of the arcane sanctuary
-  + `data.csv` contains a dump of all other potentially-relevant data for each seed
 
 *Note: I wasn't able to get BH.Injector to successfully inject when run through the Visual Studio debugger; it might be possible to get that to work*
 
