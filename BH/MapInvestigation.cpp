@@ -75,7 +75,9 @@ void InvestigateMaps()
 		int lastAct = 2; //(isLOD ? 5 : 4);
 		for (int act = 1; act <= lastAct; act++)
 		{
-			Act* pAct = D2COMMON_LoadAct(act - 1, mapSeed, isLOD, 0, D2CLIENT_GetDifficulty(), NULL, actStartingLevelIds[act - 1], D2CLIENT_LoadAct_1, D2CLIENT_LoadAct_2);
+			// the last two arguments seem to be related to automap updating; by setting them to NULL it stops some automap artifacts
+			// and gets rid of some memory-leak-like behavior (before D2CLIENT_LoadAct_1, D2CLIENT_LoadAct_2 were passed to these args)
+			Act* pAct = D2COMMON_LoadAct(act - 1, mapSeed, isLOD, 0, D2CLIENT_GetDifficulty(), NULL, actStartingLevelIds[act - 1], NULL, NULL);
 			if (!pAct || !pAct->pMisc) {
 				cout << "Failed to load act, bailing" << endl;
 				return;
