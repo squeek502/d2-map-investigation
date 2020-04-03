@@ -103,4 +103,4 @@ Running `lua ../find_correlations.lua` from with the `Debug/` or `Release/` dire
 
 ## Acknowledgements
 
-The foundational code is a modified version of [slashdiablo-maphack](https://github.com/underbent/slashdiablo-maphack) (specifically [splippitydo's fork](https://github.com/slippittydo/slashdiablo-maphack)).
+The foundational code is a modified version of [slashdiablo-maphack](https://github.com/underbent/slashdiablo-maphack) (specifically [slippittydo's fork](https://github.com/slippittydo/slashdiablo-maphack)).
